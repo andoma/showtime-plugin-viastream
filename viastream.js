@@ -6,7 +6,7 @@
 (function(plugin) {
 
   plugin.createService("Viasat Play", "viastream:start", "tv", true,
-		       plugin.config.path + "viaplay_square.png");
+		       plugin.path + "viaplay_square.png");
 
 
   function extractGeoblockUrl(url) {
@@ -27,22 +27,22 @@
 	   */
 	  page.appendItem("viastream:sitemapdata:2se:0", "directory", {
 		  title: "TV3",
-		      icon: plugin.config.path + "2selarge.png"
+		      icon: plugin.path + "2selarge.png"
 		      });
 
 	  page.appendItem("viastream:sitemapdata:3se:0", "directory", {
 		  title: "TV6",
-		      icon: plugin.config.path + "3selarge.png"
+		      icon: plugin.path + "3selarge.png"
 		      });
 
 	  page.appendItem("viastream:sitemapdata:4se:0", "directory", {
 		  title: "TV8",
-		      icon: plugin.config.path + "4selarge.png"
+		      icon: plugin.path + "4selarge.png"
 		      });
 	  
 	  page.appendItem("viastream:sitemapdata:1se:0", "directory", {
 		  title: "Sport",
-		      icon: plugin.config.path + "1selarge.png"
+		      icon: plugin.path + "1selarge.png"
 		      });
 	  
 
@@ -50,7 +50,7 @@
     page.contents = "items";
     page.loading = false;
 
-    page.metadata.logo = plugin.config.path + "viasatimage.jpg";
+    page.metadata.logo = plugin.path + "viasatimage.jpg";
     page.metadata.title = "Viasat Play"; 
   }
 
@@ -109,7 +109,7 @@
     page.type = "directory";
     page.loading = false;
 
-    var logoPath = plugin.config.path + channelId + "large.png";
+    var logoPath = plugin.path + channelId + "large.png";
     page.metadata.logo = logoPath
   });
 
